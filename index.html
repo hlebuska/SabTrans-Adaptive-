@@ -7,29 +7,196 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="header container">
+        <div class="nav_inside">
+            <a href="#"><img class="logo" src="images/logo.svg" alt="SABTRANS"></a>
+            <nav class="nav">
+                <a href="#">Главная</a>
+                <a href="#">Возможности</a>
+                <a href="#">Тариф</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+        <button class="try_for_free">Попробовать бесплатно</button>
+    </header>
     <main>
-        <div class="main_page">
-                <div class="container">
-                    <header class="header">
-                        <div class="nav_inside">
-                            <img class="logo" src="images/logo.svg" alt="SABTRANS"> 
-                            <nav class="nav">
-                                <a href="#">Главная</a>
-                                <a href="#">Возможности</a>
-                                <a href="#">Тариф</a>
-                                <a href="#">Контакты</a>
-                            </nav>
+        <section class="main_page">    
+                    <div class="ERP-system container">
+                            <h1>ERP система дял компаний по<br>аренде спецтехники</h1>
+                            <p>SABTRANS автоматизирует бизнес-процессы, наведет порядок в финансах, поможет увеличить продажи и покажет реальную прибыль.</p>
+                            <button class="try_for_free">Оставить заявку</button>
+                    </div>                
+        </section>  
+        <section class="tools">
+            <div class="we_offer container">
+                <div class="we_offer_inside">
+                    <h2>Мы предлагаем полный<br>набор инструментов</h2>
+                    <p>для управления взаимоотношениями с клиентами, комплексной автоматизации бизнеса, а также успешного развития корпоративной информационной системы. Удобный и понятный интерфейс позволяет эффективно работать c системой из любой точки мира. Внедрение SABTRANS системы  позволит значительно повысить производительность менеджеров, а также увеличит объем продаж.</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card_img"><img src="images/icon_yellow.svg" alt="Биржа"></div>
+                        <div class="card_text">
+                            <h3>Биржа</h3>
+                            <p>Cпециальная возможность в системе, на которой люди заключают сделки по аренде спецтехники.</p>
                         </div>
-                        <div class="try_for_free ce"><h2 class="center">Попробовать бесплатно</h2></div>
-                    </header>
-                    <div class="main_banner_bg">
-                        <div class="contrainer">
-                                <h1>ERP система дял компаний по<br>аренде спецтехники</h1>
-                                <p>SABTRANS автоматизирует бизнес-процессы, наведет порядок в финансах, поможет увеличить продажи и покажет реальную прибыль.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card_img"><img src="images/icon_yellow.svg" alt="Аналитика"></div>
+                        <div class="card_text">
+                            <h3>Аналитика</h3>
+                            <p>Анализирует данные о клиентах, заказов, звонках, чтобы помочь и упростить принятие более эффективных бизнес-решений</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_img"><img src="images/icon_yellow.svg" alt="Заказы"></div>
+                        <div class="card_text">
+                            <h3>Заказы</h3>
+                            
+                            <p>Модуль позволяется вести заказы, выставлять и автоматически отправлять клиентам счета, коммерческие предложения.</p>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+        </section>
+        <section class="tools_also">
+            <div class="also container">
+                <div class="heading">
+                    <h2>А так же</h2>
+                    <div class="heading_text">
+                        <p>SABTRANS система охватывает все направления деятельности компании</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="images/icon_purple.svg" alt="Биржа">
+                        </div>
+                        <div class="card_text">
+                            <h3>Лиды</h3>
+                            <p>можно собирать лиды не только с сайтов, но и с мессенджеров, почтовых клиентов, социальных сетей и других источников.  И еще какой-нибудь текст.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="images/icon_purple.svg" alt="Аналитика">
+                        </div>
+                        <div class="card_text"> 
+                            <h3>Интеграция</h3>              
+                            <p>Все плановые и фактические транзакции доступны во вкладке "Финансы". Не переключаясь между разделами, вносите новые и редактируйте уже существующие.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="images/icon_purple.svg" alt="Заказы">
+                        </div>
+                        <div class="card_text">       
+                            <h3>Финансы</h3>
+                            <p>Сайт, соцсети, мессенджеры, телефония, почта - со всех каналов взаимодействия заявки автоматически попадут в систему.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="questions_inside container">
+                <h2>Оставь заявку прямо сейчас и получи 30 дней бесплатного пользования системой</h2>
+                <form action="/submit" method="post">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <input class="submit" type="submit" value="Оставить заявку">
+                </form>
+            </div>
+        </section>
+        <section class="sap"></section>
+        <section class="partners">
+            <div class="partners_inside container">
+                <h2>Наши партнеры</h2>
+                <div class="partners_selector">
+                    <a href="#"><img src="images/ic_arrow_left.svg" alt=""></a>
+                    <a href="#"><img src="images/alfa.svg" alt="Альфа банк"></a>
+                    <a href="#"><img src="images/tochka.svg" alt="Вкусно и точка"></a>
+                    <a href="#"><img src="images/sber.svg" alt="Сбер банк"></a>
+                    <a href="#"><img src="images/ic_arrow_right.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="why_us">
+            <div class="why_us_inside container">
+                <h2>Почему мы?</h2>
+                <div class="why_us_list">
+                    <div class="list_card">
+                        <img src="images/small_icon.svg" alt="*">
+                        <h3>Безопасное хранение данных</h3>
+                    </div>
+                    <div class="list_card">
+                        <img src="images/small_icon.svg" alt="*">
+                        <h3>Поддержка по телефону и в чате</h3>
+                    </div>
+                    <div class="list_card">
+                        <img src="images/small_icon.svg" alt="*">
+                        <h3>Интеграция с внешними сервисами</h3>
+                    </div>
+                    <div class="list_card">
+                        <img src="images/small_icon.svg" alt="*">
+                        <h3>Собственная биржа</h3>
+                    </div>
+                    <div class="list_card">
+                        <img src="images/small_icon.svg" alt="*">
+                        <h3>Мобильное приложение</h3>
+                    </div>
+                    <button class="try_for_free">Заказать звонок</button>
+                </div>
+                <img src="images/dude.png" alt="">
+            </div>
+        </section>
+        <section class="faq"></section>
+        <section class="contacts">
+            <div class="contacts_inside container">
+                <h2>Контакты</h2>
+                <div class="contacts_icons">
+                    <div class="contacts_icon">
+                        <img src="images/small_icon.svg" alt="*">
+                        <a href="#">
+                            <h3>+7 (999) 888-00-00</h3>
+                        </a>
+                    </div>         
+                    <div class="contacts_icon">
+                        <img src="images/small_icon.svg" alt="*">
+                        <a href="#">
+                            <h3>sabtrans@mail.ru</h3>
+                        </a>
+
+                    </div>       
+                    <div class="contacts_icon">
+                        <img src="images/small_icon.svg" alt="*">
+                        <a href="#">
+                            <h3>Г. Москва, Мясницкая 4, к2, стр1</h3>
+                        </a>
+                    </div>         
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="questions_inside container">
+                <h2>Остались еще вопросы?<br>Оставьте заявку и мы свяжемся с вами в ближайшее время</h2>
+                <form action="/submit" method="post">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <input class="submit" type="submit" value="Оставить заявку">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer container">
+                <a href="#"><img class="logo" src="images/logo.svg" alt="SABTRANS"></a>
+                <div class="links">
+                    <a href="#"><img class="logo" src="images/ic_youtube.svg" alt="Youtube"></a>
+                    <a href="#"><img class="logo" src="images/ic_telega.svg" alt="Telegram"></a>
+                </div>
+                <a class="copyright" href="#">© 2023 SABTRANS</a>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

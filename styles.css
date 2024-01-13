@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,47 +8,60 @@
 
 main{
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
-.center{
-    position: relative;
-    top: 50%;
+.centerH{
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
 }
+
+.centerV{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 
 .main_page{
-    width: 1920px;
+    height: 902px;
     background-color: #F9F9FF;
+    background-image: url("images/pic_fon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;    
+    height: 674px;
 }
 
 .container{
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main_page .container .header{
     width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0 auto;
+    border: 1px black solid;
+}
+
+.header{
     height: 46px;
-    margin: 16px auto;
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-.main_page .container .header .nav_inside{
+.header .nav_inside{
     display: flex;
     justify-content: space-between;
 }
 
-.main_page .container .header .nav_inside .nav{
+.header .nav_inside .nav{
     display: flex;
     margin-left: 90px;
 }
 
-.main_page .container .header .nav_inside .nav a{
+.header .nav_inside .nav a{
     margin: auto 16px;
     text-decoration: none;
     color: #424467;
@@ -59,13 +73,11 @@ main{
     line-height: 24px;
 }
 
-.main_page .container .header .try_for_free{
+.header .try_for_free{
     width: 255px;
     background-color: #F2B705;
+    border: 0;
     border-radius: 12px;
-}
-
-.main_page .container .header .try_for_free h2{
     color:#FFF;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -73,4 +85,350 @@ main{
     font-weight: 500;
     line-height: normal;
     text-align: center;
+}
+
+.main_page .ERP-system{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_page h1{
+    color: #424467;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+
+}
+.main_page p{
+    color: #8B8FBB;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+.main_page button{
+    width: 350px;
+    height: 56px;
+    background-color: #616BE8;
+    border: 0;
+    border-radius: 12px;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    
+}
+
+.tools{
+    height: 564px;
+    background-color: #fff;
+    background-image: url("images/tools_fon.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.tools .we_offer{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tools .we_offer_inside{
+    display: flex;
+    flex-direction: column;
+}
+.tools .we_offer_inside h2{
+    flex: 1;
+}  
+.tools .we_offer_inside p{
+    width: 95%;
+    flex: 2;
+}  
+
+.tools .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tools .cards .card{    
+    width: 450px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.tools .cards .card .card_text{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 79%;
+}
+
+.tools h2{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tools h3{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tools p{
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.also{
+    height: 279px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tools_also{
+    height: 564px;
+    background-color: #F9F9FF;
+}
+.tools_also .heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools_also .heading h2{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tools_also .heading .heading_text{
+    display: flex;
+    align-items: end;
+}
+
+.tools_also .heading p{
+    color: #8B8FBB; 
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.tools_also .cards{
+    display: flex;
+}
+
+.tools_also .card{
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 13px;
+}
+
+.tools_also .card .card_img img{
+    width: 65px;
+    height: 60px;
+}
+
+
+.tools_also .card .card_text{
+    width: 75%;
+}
+
+.tools_also .card .card_text h3{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.tools_also .card .card_text p{
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+
+.questions{
+    height: 308px;
+    background-color: #616BE8;
+}
+
+.questions h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.questions form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions form input{
+    width: 350px;
+    height: 56px;
+    background-color: #F9F9FF;
+    border: 0;
+    border-radius: 12px;
+}
+.questions form input::placeholder{
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    left: 10px;
+}
+
+.questions .submit{
+    width: 350px;
+    height: 56px;
+    background-color: #F2B705;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.sap{
+    height: 752px;
+    background-color: #F9F9FF;
+}
+
+.partners{
+    height: 269px;
+    background-color:#F2B705
+}
+
+.partners .partners_inside h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.partners .partners_selector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.why_us{
+    height: 688px;
+    background-color: #F9F9FF;
+}
+
+.faq{
+    height: 436px;
+    background-color: #fff;
+}
+
+.contacts{
+    height: 255px;
+    background-color: #F9F9FF;
+}
+
+.contacts .contacts_icons{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .contacts_icon{
+    display: flex;
+    align-items: center;
+}
+
+.contacts h2{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.contacts h3, .contacts a{
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+footer{
+    height: 70px;
+    background-color: #F9F9FF;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .links img{
+    margin: 7.5px;
+}
+
+.footer .copyright{
+    text-decoration: none;
+    color: #C8CCED;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 }
