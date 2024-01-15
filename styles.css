@@ -344,6 +344,221 @@ main{
     background-color: #F9F9FF;
 }
 
+.sap_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sap_inside .sap_header h2{
+    color: #424467;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73px;
+   
+}
+
+.sap_inside .sap_header p{
+    color: #8B8FBB;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sap_inside .sap_list{
+    width: 100%;
+    height: 345px;
+    background-color: #fff;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sap_inside .sap_list ul{
+    padding: 0;
+    margin: 24px;
+}
+
+.sap_inside .sap_list .sap_card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sap_inside .sap_list .sap_card .title{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.sap_inside .sap_list .sap_card .title .sap_checkbox{
+    display: none;
+}
+
+.sap_inside .sap_list .sap_card .title .checkbox-label{
+    position: relative;
+    color: #424467;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    margin-left: 30px;
+}
+
+.checkbox-label::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute;
+    outline: #F2B705 solid 2px;
+    top: 4px;
+    left: -30px;
+}
+
+.sap_checkbox:checked + ::before{
+    background: url(images/checkmark.svg);
+
+}
+
+.sap_inside .sap_list .sap_card .title .amount{
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+    background: #E6EBFB;  
+    border: 0;
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sap_inside .sap_list .sap_card .numbers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sap_inside .sap_list .sap_card .numbers .cost{
+    color: #8B8FBB;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.sap_inside .sap_list .sap_card .numbers .money{
+    color: #424467;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.sap_inside h3{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 24px;
+}
+
+.sap_inside .total{
+    height: 52px;
+    border-radius: 10px;
+    background: #E6EBFB;
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sap_inside .total .numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sap_inside .total .numbers .rubles{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.sap_inside .total .numbers .slash{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.sap_inside .total .numbers .duration{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    vertical-align: middle;
+}
+
+.sap_inside .total .numbers .per_day{
+    width: 200px;
+    height: 44px;
+    border-radius: 12px;
+    background: #616BE8;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.sap_inside .total .numbers .per_month{
+    width: 200px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 14px;
+}
+
+.sap_inside .total .numbers .per_month > * {
+    color: #424467;
+    font-family: Montserrat;
+}
+
+.sap_inside .send_request{
+    width: 526px;
+    height: 56px;
+    border-radius: 12px;
+    background: #F2B705;
+    border: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
 .partners{
     height: 269px;
     background-color:#F2B705

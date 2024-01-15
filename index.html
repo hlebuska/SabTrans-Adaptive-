@@ -108,7 +108,48 @@
                 </form>
             </div>
         </section>
-        <section class="sap"></section>
+        <section class="sap">
+            <div class="sap_inside container"> 
+                <div class="sap_header">
+                    <h2>Расчет стоимости SAP системы</h2>
+                    <p>Точная стоимость зависит от количества автоматизируемых пользователей или техники, а так же других функций, которые вы хотите подключить</p>
+                </div>
+                <div class="sap_list">
+                    <h3>Выберите какие функции надо подключить</h3>
+                    <ul>
+                        <li class="sap_card">
+                            <div class="title">
+                                <input type="checkbox" name="users" id="users" class="sap_checkbox">    
+                                <label for="users" class="checkbox-label">
+                                    Пользователи / техника, кол-во</label>         
+                                <input class="amount" type="text">
+                            </div>                  
+                            
+                            <div class="numbers">
+                                <div class="price"><span class="cost">Стоимость, ₽:</span><span class="money">&nbsp;20</span></div>
+                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;1660</span></div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <div class="total">
+                        <h3>Итого цена подписки</h3>
+                        <div class="numbers">
+                            <div class="per_day">
+                                <span class="rubles">1 770 ₽</span>
+                                <span class="slash">&nbsp;/&nbsp;</span>
+                                <span class="duration">сутки</span></div>
+                            <div class="per_month">
+                                <span class="rubles">53 310 ₽</span>
+                                <span class="slash">&nbsp;/&nbsp;</span>
+                                <span class="duration">месяц</span></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="send_request">Отправить заявку для подключения</button>
+            </div>
+        </section>
         <section class="partners">
             <div class="partners_inside container">
                 <h2>Наши партнеры</h2>
