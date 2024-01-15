@@ -388,11 +388,13 @@ main{
 .sap_inside .sap_list .sap_card{
     display: flex;
     justify-content: space-between;
+    height: 38px;
 }
 
 .sap_inside .sap_list .sap_card .title{
     display: flex;
     justify-content: space-between;  
+    width: 400px;
 }
 
 .sap_inside .sap_list .sap_card .title .sap_checkbox{
@@ -418,7 +420,7 @@ main{
     position: absolute;
     outline: #F2B705 solid 1px;
     outline-offset: -1px;
-    top: 4px;
+    top: 5px;
     left: -30px;
 }
 
@@ -445,6 +447,7 @@ main{
 .sap_inside .sap_list .sap_card .numbers{
     display: flex;
     justify-content: space-between;
+    width: 300px;
 }
 
 .sap_inside .sap_list .sap_card .numbers .cost{
