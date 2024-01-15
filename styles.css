@@ -344,6 +344,12 @@ main{
     background-color: #F9F9FF;
 }
 
+.sap .sap_functions{
+    height: 345px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
 .partners{
     height: 269px;
     background-color:#F2B705
@@ -370,9 +376,67 @@ main{
     background-color: #F9F9FF;
 }
 
+.why_us_inside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why_us_inside_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why_us_inside_left h2{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.why_us_inside .list_card{
+    display: flex;
+    margin-top: 25px;
+}
+
+.why_us_list{
+    margin-top: 25px;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: 0;
+}
+
+.why_us_inside .list_card h3{
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 16px;
+}
+
+.why_us_inside button{
+    width: 350px;
+    height: 56px;
+    margin: 37px 0;
+    border-radius: 12px;
+    background-color: #F2B705;
+    border: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
 .faq{
     height: 436px;
     background-color: #fff;
+    background-image: url("images/faqfon.png");
 }
 
 .contacts{
