@@ -313,6 +313,23 @@ main{
     background-color: #F9F9FF;
     border: 0;
     border-radius: 12px;
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    left: 10px;
+}
+
+.questions form input:focus{
+    width: 350px;
+    height: 56px;
+    background-color: #F9F9FF;
+    border: 0;
+    border-radius: 12px;
+    outline: 0;
 }
 .questions form input::placeholder{
     color: #8B8FBB;
@@ -347,7 +364,9 @@ main{
 .sap_inside{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    height: 588px;
 }
 
 .sap_inside .sap_header h2{
@@ -433,7 +452,7 @@ main{
     width: 60px;
     height: 30px;
     border-radius: 8px;
-    background: #E6EBFB;  
+    background-color: #E6EBFB;  
     border: 0;
     color: #8B8FBB;
     font-family: Manrope;
@@ -442,6 +461,10 @@ main{
     font-weight: 400;
     line-height: 30px;
     text-align: center;
+}
+
+.sap_inside .sap_list .sap_card .title .amount:focus{
+    outline: #8B8FBB solid 1px; 
 }
 
 .sap_inside .sap_list .sap_card .numbers{
