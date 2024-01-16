@@ -32,6 +32,9 @@ main{
     background-repeat: no-repeat;
     width: 100%;    
     height: 674px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .container{
@@ -138,6 +141,9 @@ main{
     background-image: url("images/tools_fon.png");
     background-repeat: no-repeat;
     background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .tools .we_offer{
@@ -216,6 +222,9 @@ main{
 .tools_also{
     height: 564px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .tools_also .heading{
     display: flex;
@@ -290,6 +299,9 @@ main{
 .questions{
     height: 308px;
     background-color: #616BE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .questions h2{
@@ -359,6 +371,9 @@ main{
 .sap{
     height: 752px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .sap_inside{
@@ -588,7 +603,10 @@ main{
 
 .partners{
     height: 269px;
-    background-color:#F2B705
+    background-color:#F2B705;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .partners .partners_inside h2{
@@ -610,6 +628,9 @@ main{
 .why_us{
     height: 688px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .why_us_inside{
@@ -673,11 +694,102 @@ main{
     height: 436px;
     background-color: #fff;
     background-image: url("images/faqfon.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.faq .faq_inside{
+    height: 318px;
+    display: flex;
+}
+
+.faq .faq_inside .faq_header{
+    margin-left: 120px;
+}
+
+.faq .faq_inside .faq_header h2{
+    color: #E5007E;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.faq .faq_inside .faq_header h3{
+    color: #424467;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.faq .faq_inside .accordion{
+    width: 640px;
+}
+
+.faq .faq_inside .accordion li{
+    padding: 15px 0;   
+}
+
+.faq .faq_inside .accordion li .heading{
+    display: flex;
+    
+}
+.faq .faq_inside .accordion .accordion_label{
+    color: #424467;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq .faq_inside .accordion .accordion_label img{
+    transform: rotate(-90deg);
+    transition: transform .35s ease-in-out;
+}
+
+.faq .faq_inside .accordion .content p{
+    color: #8B8FBB;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s;
+}
+
+.faq .faq_inside .accordion hr{
+    border: 1px solid #E6EBFB;
+}
+
+.faq .faq_inside .accordion input{
+    display: none;
+}
+.faq .faq_inside .accordion input:checked + label + .content p {
+    max-height: 50px;
+}
+
+.faq .faq_inside .accordion input:checked + label img{
+    transform: rotate(0deg);
 }
 
 .contacts{
     height: 255px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contacts .contacts_icons{
@@ -711,6 +823,9 @@ main{
 footer{
     height: 70px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .footer{
