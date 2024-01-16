@@ -32,6 +32,9 @@ main{
     background-repeat: no-repeat;
     width: 100%;    
     height: 674px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .container{
@@ -138,6 +141,9 @@ main{
     background-image: url("images/tools_fon.png");
     background-repeat: no-repeat;
     background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .tools .we_offer{
@@ -216,6 +222,9 @@ main{
 .tools_also{
     height: 564px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .tools_also .heading{
     display: flex;
@@ -290,6 +299,9 @@ main{
 .questions{
     height: 308px;
     background-color: #616BE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .questions h2{
@@ -342,6 +354,9 @@ main{
 .sap{
     height: 752px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .sap_inside{
@@ -565,7 +580,10 @@ main{
 
 .partners{
     height: 269px;
-    background-color:#F2B705
+    background-color:#F2B705;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .partners .partners_inside h2{
@@ -587,11 +605,17 @@ main{
 .why_us{
     height: 688px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .faq{
     height: 436px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .faq .faq_inside{
@@ -682,6 +706,9 @@ main{
 .contacts{
     height: 255px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contacts .contacts_icons{
@@ -715,6 +742,9 @@ main{
 footer{
     height: 70px;
     background-color: #F9F9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .footer{
