@@ -44,6 +44,6 @@ function updateForm(checkbox, input, numbers){
         checkbox.checked = false;
         numbers.textContent = "0";
     }
-    totalDay.textContent = parseInt(usersNumbers.textContent) + parseInt(integrationNumbers.textContent) + parseInt(storageNumbers.textContent) + parseInt(specialistNumbers.textContent) + " ₽";
-    totalMonth.textContent = parseInt(totalDay.textContent) * 30;
+    totalDay.textContent = parseInt(usersNumbers.textContent) + parseInt(integrationNumbers.textContent) + parseInt(storageNumbers.textContent) + parseInt(specialistNumbers.textContent) + "₽";
+    totalMonth.textContent = parseInt(totalDay.textContent) * 30 + "₽";
 }

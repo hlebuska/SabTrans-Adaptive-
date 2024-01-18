@@ -587,7 +587,7 @@ input[type=number]::-webkit-inner-spin-button {
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 30px;
 }
 
@@ -597,7 +597,7 @@ input[type=number]::-webkit-inner-spin-button {
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 27px;
     vertical-align: middle;
 }
@@ -609,7 +609,7 @@ input[type=number]::-webkit-inner-spin-button {
     background: #616BE8;
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    justify-content: center;
 }
 
 .sap_inside .total .numbers .per_month{
@@ -619,7 +619,10 @@ input[type=number]::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding-left: 14px;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sap_inside .total .numbers .per_month > * {
