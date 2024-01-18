@@ -6,9 +6,14 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Manrope', sans-serif;
+    background-color: #F9F9FF;    
 }
 
 .centerH{
@@ -31,10 +36,14 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;    
-    height: 674px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    height: 847px; 
+    position: relative;
+    top: 72px;   
+}
+
+.ERP-system{
+    position: relative;
+    top: 5%;
 }
 
 .container{
@@ -44,7 +53,19 @@ main{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin: 0 auto;
-    border: 1px black solid;
+    /*border: 1px black solid;*/
+}
+
+header{
+    width: 100%;
+    background-color: #F9F9FF;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
 }
 
 .header{
@@ -88,8 +109,8 @@ main{
     font-weight: 500;
     line-height: normal;
     text-align: center;
+    cursor: pointer;
 }
-
 .main_page .ERP-system{
     height: 300px;
     display: flex;
@@ -132,7 +153,7 @@ main{
     font-weight: 500;
     line-height: normal;
     text-align: center;
-    
+    cursor: pointer;
 }
 
 .tools{
@@ -332,7 +353,7 @@ main{
     font-weight: 400;
     line-height: 30px;
     position: relative;
-    left: 10px;
+    padding: 0 10px;
 }
 
 .questions form input:focus{
@@ -351,7 +372,7 @@ main{
     font-weight: 400;
     line-height: 30px;
     position: relative;
-    left: 10px;
+    
 }
 
 .questions .submit{
@@ -366,6 +387,7 @@ main{
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    cursor: pointer;
 }
 
 .sap{
@@ -444,6 +466,7 @@ main{
     font-weight: 400;
     line-height: 30px; 
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .checkbox-label::before{
@@ -453,9 +476,10 @@ main{
     border-radius: 100%;
     position: absolute;
     outline: #F2B705 solid 1px;
-    outline-offset: -1px;
+    outline-offset: -2px;
     top: 5px;
     left: -30px;
+    cursor: pointer;
 }
 
 .sap_checkbox:checked + ::before{
@@ -599,6 +623,7 @@ main{
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    cursor: pointer;
 }
 
 .partners{
@@ -688,6 +713,7 @@ main{
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    cursor: pointer;
 }
 
 .faq{
@@ -737,7 +763,6 @@ main{
 
 .faq .faq_inside .accordion li .heading{
     display: flex;
-    
 }
 .faq .faq_inside .accordion .accordion_label{
     color: #424467;
@@ -749,6 +774,7 @@ main{
     line-height: 24px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .faq .faq_inside .accordion .accordion_label img{

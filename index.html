@@ -7,27 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header container">
-        <div class="nav_inside">
-            <a href="#"><img class="logo" src="images/logo.svg" alt="SABTRANS"></a>
-            <nav class="nav">
-                <a href="#">Главная</a>
-                <a href="#">Возможности</a>
-                <a href="#">Тариф</a>
-                <a href="#">Контакты</a>
-            </nav>
+    <header>
+        <div class="header container">
+            <div class="nav_inside">
+                <a href="#"><img class="logo" src="images/logo.svg" alt="SABTRANS"></a>
+                <nav class="nav">
+                    <a href="#main">Главная</a>
+                    <a href="#tools">Возможности</a>
+                    <a href="#sap">Тариф</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+            </div>
+            <button class="try_for_free">Попробовать бесплатно</button>
         </div>
-        <button class="try_for_free">Попробовать бесплатно</button>
     </header>
     <main>
-        <section class="main_page">    
+        <section class="main_page" id="main">    
                     <div class="ERP-system container">
-                            <h1>ERP система дял компаний по<br>аренде спецтехники</h1>
+                            <h1>ERP система для компаний по<br>аренде спецтехники</h1>
                             <p>SABTRANS автоматизирует бизнес-процессы, наведет порядок в финансах, поможет увеличить продажи и покажет реальную прибыль.</p>
                             <button class="try_for_free">Оставить заявку</button>
                     </div>                
         </section>  
-        <section class="tools">
+        <section class="tools" id="tools">
             <div class="we_offer container">
                 <div class="we_offer_inside">
                     <h2>Мы предлагаем полный<br>набор инструментов</h2>
@@ -108,7 +110,7 @@
                 </form>
             </div>
         </section>
-        <section class="sap">
+        <section class="sap" id="sap">
             <div class="sap_inside container"> 
                 <div class="sap_header">
                     <h2>Расчет стоимости SAP системы</h2>
@@ -230,7 +232,7 @@
                     </ul>
                     <button class="try_for_free">Заказать звонок</button>
                 </div>
-                <img src="images/dude.pn" alt="">
+                <img src="images/dude.png" alt="">
             </div>
         </section>
         <section class="faq">
@@ -284,7 +286,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts_inside container">
                 <h2>Контакты</h2>
                 <div class="contacts_icons">
