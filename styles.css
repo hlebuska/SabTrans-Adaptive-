@@ -335,11 +335,18 @@ header{
     line-height: 40px;
 }
 
+.hidden{
+    display: none !important;
+}
+
 .questions form{
     display: flex;
     justify-content: space-between;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .questions form input{
     width: 350px;
     height: 56px;
@@ -364,6 +371,15 @@ header{
     border-radius: 12px;
     outline: 0;
 }
+
+.questions form input[type=submit]:focus{
+    width: 350px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #F2B705;
+    text-decoration: underline;
+}
+
 .questions form input::placeholder{
     color: #8B8FBB;
     font-family: Manrope;

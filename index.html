@@ -124,26 +124,26 @@
                                 <input type="checkbox" name="users" id="users" class="sap_checkbox">    
                                 <label for="users" class="checkbox-label">
                                     Пользователи / техника, кол-во</label>         
-                                <input class="amount" type="text">
+                                <input class="amount" type="number" id="users_input" min="0" value="0">
                             </div>                  
                             
-                            <div class="numbers">
+                            <div class="numbers" id="users_numbers">
                                 <div class="price"><span class="cost">Стоимость, ₽:</span><span class="money">&nbsp;20</span></div>
-                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;1660</span></div>
+                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;0</span></div>
                             </div>
                         </li>
 
-                        <li class="sap_card">
+                        <li class="sap_card">   
                             <div class="title">
                                 <input type="checkbox" name="integration" id="integration" class="sap_checkbox">    
                                 <label for="integration" class="checkbox-label">
                                     Интеграция 1С, кол-во</label>         
-                                <input class="amount" type="text">
+                                <input class="amount" type="number" id="integration_input" min="0" value="0">
                             </div>                  
                             
-                            <div class="numbers">
+                            <div class="numbers" id="integration_numbers" min="0" value="0">
                                 <div class="price"><span class="cost">Стоимость, ₽:</span><span class="money">&nbsp;20</span></div>
-                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;1660</span></div>
+                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;0</span></div>
                             </div>
                         </li>
 
@@ -152,12 +152,12 @@
                                 <input type="checkbox" name="storage" id="storage" class="sap_checkbox">    
                                 <label for="storage" class="checkbox-label">
                                     Хранение записей, кол-во</label>         
-                                <input class="amount" type="text">
+                                <input class="amount" type="number" id="storage_input" min="0" value="0">
                             </div>                  
                             
-                            <div class="numbers">
+                            <div class="numbers" id="storage_numbers">
                                 <div class="price"><span class="cost">Стоимость, ₽:</span><span class="money">&nbsp;20</span></div>
-                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;1660</span></div>
+                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;0</span></div>
                             </div>
                         </li>
 
@@ -166,12 +166,12 @@
                                 <input type="checkbox" name="specialist" id="specialist" class="sap_checkbox">    
                                 <label for="specialist" class="checkbox-label">
                                     Выезд специалиста, кол-во</label>         
-                                <input class="amount" type="text">
+                                <input class="amount" type="number" id="specialist_input" min="0" value="0">
                             </div>                  
                             
-                            <div class="numbers">
+                            <div class="numbers" id="specialist_numbers">
                                 <div class="price"><span class="cost">Стоимость, ₽:</span><span class="money">&nbsp;20</span></div>
-                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;1660</span></div>
+                                <div class="local_total"><span class="cost">Итого, ₽:</span><span class="money">&nbsp;0</span></div>
                             </div>
                         </li>
                     </ul>
@@ -179,11 +179,11 @@
                         <h3>Итого цена подписки</h3>
                         <div class="numbers">
                             <div class="per_day">
-                                <span class="rubles">1 770 ₽</span>
+                                <span class="rubles" id="rubles_day">0 ₽</span>
                                 <span class="slash">&nbsp;/&nbsp;</span>
                                 <span class="duration">сутки</span></div>
                             <div class="per_month">
-                                <span class="rubles">53 310 ₽</span>
+                                <span class="rubles" id="rubles_month">0 ₽</span>
                                 <span class="slash">&nbsp;/&nbsp;</span>
                                 <span class="duration">месяц</span></div>
                         </div>
@@ -333,5 +333,6 @@
             </div>
         </footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
