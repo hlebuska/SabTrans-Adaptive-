@@ -491,16 +491,16 @@ input[type=number]::-webkit-inner-spin-button {
     height: 20px;
     border-radius: 100%;
     position: absolute;
-    outline: #F2B705 solid 1px;
-    outline-offset: -2px;
     top: 5px;
     left: -30px;
     cursor: pointer;
+    transform: scale(0);
+    transition: transform 0.25s; 
 }
 
 .sap_checkbox:checked + ::before{
     background: url(images/checkmark.svg);
-
+    transform: scale(1);
 }
 
 .sap_inside .sap_list .sap_card .title .amount{

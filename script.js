@@ -32,8 +32,12 @@ specialistInput.addEventListener("change", (event) => updateForm(specialistCheck
 
 
 function clickOnForm(checkbox, input) {
-    checkbox.checked = false;
-    input.focus();
+    if(input.value == 0){
+        checkbox.checked = false;
+        input.focus();
+    } else {
+        checkbox.checked = true;
+    }
 }
 
 function updateForm(checkbox, input, numbers){  
