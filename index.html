@@ -26,7 +26,7 @@
                     <div class="ERP-system container">
                             <h1>ERP система для компаний по<br>аренде спецтехники</h1>
                             <p>SABTRANS автоматизирует бизнес-процессы, наведет порядок в финансах, поможет увеличить продажи и покажет реальную прибыль.</p>
-                            <button class="try_for_free">Оставить заявку</button>
+                            <button class="leave_requst_button">Оставить заявку</button>
                     </div>                
         </section>  
         <section class="tools" id="tools">
@@ -230,7 +230,7 @@
                             <h3>Мобильное приложение</h3>
                         </div>
                     </ul>
-                    <button class="try_for_free">Заказать звонок</button>
+                    <button class="get_call">Заказать звонок</button>
                 </div>
                 <img src="images/dude.png" alt="">
             </div>
@@ -322,17 +322,29 @@
                 </form>
             </div>
         </section>
-        <footer>
-            <div class="footer container">
-                <a href="#"><img class="logo" src="images/logo.svg" alt="SABTRANS"></a>
-                <div class="links">
-                    <a href="#"><img class="logo" src="images/ic_youtube.svg" alt="Youtube"></a>
-                    <a href="#"><img class="logo" src="images/ic_telega.svg" alt="Telegram"></a>
-                </div>
-                <a class="copyright" href="#">© 2023 SABTRANS</a>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer container">
+            <a href="#"><img class="logo" src="images/logo.svg" alt="SABTRANS"></a>
+            <div class="links">
+                <a href="#"><img class="logo" src="images/ic_youtube.svg" alt="Youtube"></a>
+                <a href="#"><img class="logo" src="images/ic_telega.svg" alt="Telegram"></a>
+            </div>
+            <a class="copyright" href="#">© 2023 SABTRANS</a>
+        </div>
+    </footer>
+    <dialog overlay class="modal_request">
+        <button class="close_button"><img src="images/ic_close.svg" alt="Закрыть"></button>
+        <h2>Оставьте заявку</h2>
+        <form action="/submit" method="post">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите имя" required>
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+            <input class="submit" type="submit" value="Оставить заявку">
+        </form>
+    </dialog>
     <script src="script.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>
