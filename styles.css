@@ -903,6 +903,15 @@ footer{
     transform: translate(-50%, -50%);
     border: 0;
     z-index: 91;
+
+}
+
+.modal_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .modal_request[open]::backdrop {
@@ -918,6 +927,9 @@ footer{
     padding: 0;
     margin: 0;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .modal_request button img{
@@ -933,6 +945,7 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 30px;
 }
 
 .modal_request form label{
@@ -942,12 +955,14 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    position: relative;
+    bottom: 5px;
 }
 .modal_request form input{
     width: 350px;
     height: 56px;
     background-color: #F9F9FF;
-    border: 0;
+    border: #8B8FBB 1px solid;
     border-radius: 12px;
     color: #8B8FBB;
     font-family: Manrope;
@@ -957,6 +972,7 @@ footer{
     line-height: 30px;
     position: relative;
     padding: 0 10px;
+    margin-bottom: 40px;
 }
 
 .modal_request form input[type=submit]{
@@ -964,6 +980,7 @@ footer{
     height: 56px;
     border-radius: 12px;
     background-color: #F2B705;
+    border: 0;
     color: #fff;
     font-family: Montserrat;
     font-size: 18px;
