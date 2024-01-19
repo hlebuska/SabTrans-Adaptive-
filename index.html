@@ -186,7 +186,7 @@
                                 <span class="rubles" id="rubles_month">0 ₽</span>
                                 <span class="slash">&nbsp;/&nbsp;</span>
                                 <span class="duration">месяц</span></div>
-                        </div>
+                            </div>
                     </div>
                 </div>
                 <button class="send_request">Отправить заявку для подключения</button>
@@ -337,13 +337,23 @@
         <button class="close_button"><img src="images/ic_close.svg" alt="Закрыть"></button>
         <div class="modal_inside">
             <h2>Оставьте заявку</h2>
-            <form action="/submit" method="post">
+            <form action="/submit" method="post" class="submit_form">
                 <label for="name">Имя</label>
                 <input type="text" id="name" name="name" placeholder="Введите имя" required>
                 <label for="phone">Телефон</label>
                 <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
-                <input class="submit" type="submit" value="Оставить заявку">
+                <input class="submit" type="submit" value="Оставить заявку" >
             </form>
+        </div>
+        <div class="modal_error hidden">
+            <img src="images/ic_error.svg" alt="ошибка">
+            <h2>ошибка</h2>
+            <p>К сожалению произошла ошибка.<br>Пожалуйста, попробуйте снова.</p>
+        </div>
+        <div class="modal_success hidden">
+            <img src="images/ic_success.svg" alt="ошибка">
+            <h2>успешно</h2>
+            <p>Ваша заявка отправлена.</p>
         </div>
     </dialog>
     <script src="script.js"></script>
