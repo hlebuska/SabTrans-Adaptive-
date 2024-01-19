@@ -64,8 +64,8 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: 100;
     position: fixed;
+    z-index: 100;
 }
 
 .header{
@@ -323,6 +323,13 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.questions_inside{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .questions h2{
@@ -891,4 +898,101 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+}
+
+.modal_request{
+    width: 400px;
+    height: 504px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 24px;
+    transform: translate(-50%, -50%);
+    border: 0;
+    z-index: 91;
+
+}
+
+.modal_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.modal_request[open]::backdrop {
+    background-color: #212127B2;
+    z-index: 90;
+}
+
+.modal_request button{
+    height: 20px;
+    width: 20px;
+    border: 0;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.modal_request button img{
+    height: 20px;
+    width: 20px;
+    border: 0;
+    background-color: #ffffff;
+}
+.modal_request h2{
+    color:#565981;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+}
+
+.modal_request form label{
+    color:#8B8FBB;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    bottom: 5px;
+}
+.modal_request form input{
+    width: 350px;
+    height: 56px;
+    background-color: #F9F9FF;
+    border: #8B8FBB 1px solid;
+    border-radius: 12px;
+    color: #8B8FBB;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+
+.modal_request form input[type=submit]{
+    width: 350px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #F2B705;
+    border: 0;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
 }
