@@ -325,6 +325,13 @@ header{
     justify-content: space-around;
 }
 
+.questions_inside{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .questions h2{
     color: #FFF;
     text-align: center;
