@@ -1224,12 +1224,26 @@ footer{
         height: 992px;
     }
 }
-
+.sap{
+    display: none;
+}
 /* m */
 @media (max-width: 724px) {
     .container{
         max-width: 288px;
     } 
+    header{
+        height: 110px;
+    }
+    .header{
+        height: 110px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header button{
+        height: 46px;
+    }
     .main_page{
         height: 654px;
     }
