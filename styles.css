@@ -1224,9 +1224,6 @@ footer{
         height: 992px;
     }
 }
-.sap{
-    display: none;
-}
 /* m */
 @media (max-width: 724px) {
     .container{
@@ -1243,6 +1240,101 @@ footer{
     }
     .header button{
         height: 46px;
+    }
+    .sap{
+        height: 1311px;
+    }
+    .sap .sap_inside{
+        height: 1167px;
+    }
+    .sap .sap_inside h2{
+        color: #424467;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px;
+    }
+    .sap .sap_inside p{
+        color: #8B8FBB;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    .sap .sap_inside h3{
+        color: #424467;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+    }
+    .sap .sap_inside .sap_list{
+        height: 751px;
+        justify-content: space-evenly;
+    }
+    .sap .sap_inside .sap_list ul{
+        margin: 0;
+    }
+    .sap .sap_inside .sap_list ul .last_card{
+        display: none;
+    }
+    .sap .sap_inside .sap_list .sap_card{
+        height: 104px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .sap .sap_inside .sap_list .sap_card .title{
+        width: 100%;
+        height: 66px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sap .sap_inside .sap_list .sap_card .title label{
+        color: #424467;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px
+    }
+    .sap .sap_inside .sap_list .sap_card .amount{
+        width: 100%;
+    }
+    .sap .sap_inside .sap_list .sap_card .numbers{
+        width: 100%;
+    }
+    .sap .sap_inside .sap_list .total{
+        width: 100%;
+        height: 162px;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .sap .sap_inside .total h3{
+        color: #424467;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0 auto;
+    }
+    .sap .sap_inside .total .numbers{
+        flex-direction: column;
+    }
+    .sap .sap_inside button{
+        width: 272px;
+        height: 87px;
     }
     .main_page{
         height: 654px;
